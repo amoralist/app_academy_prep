@@ -1,0 +1,157 @@
+CLASSES
+
+	- Define a new class
+		class Name
+			arrt_accessor :attr1, :attr2, attr3, ...
+		end
+	
+	- Define a subclass
+		class Subclass < Class
+			attr_accessor :xattr, :xattr2, ...
+		end
+	
+	- Create object in X class
+		object = X.new
+		
+	- Modify attr y of object
+		object.y = (string/int/etc)
+		
+	- Object Methods
+		class Object (< Parent Class if extant)
+			def method_name
+				#method instructions go here
+			end
+		end
+		
+	- Perform method Y with object X (optional arguments)
+		object.method_name (arguments go here)
+		
+	- Return object's class
+		puts object.class
+		
+	
+METHODS
+	-".between?(lower_int_bound, upper_int_bound) - bounds are inclusive
+	
+	
+	-"%q{Block of multi-line text}" - creates multi-line string or 'quotation'
+	-"<=>" is called the 'comparison operator'; returns 0 if both sides are
+		equal 1 if left side is greater, and -1 if right side is greater
+	- "<<STRING_DELIMITER Multiline quotation STRING_DELIMITER" - h-ere document
+	-"?(char)" returns ASCII value of character
+	-"(number).chr"	returns ASCII character at (number) on ASCII table
+	-".scan(regex)" returns array of all matching parts of a string
+	-".split(regex)" returns array of string split at instances of REGEX
+	-".inspect" gives a textual representation of almost any object
+	-".collect{|x| operation}" performs operation across an array [same as
+		.map]
+	-"x.empty?" checks whether an array has contents
+	-"x.include?(param)" checks if an array contains supplied parameter
+	-".first"/".last" returns first or last element of array, (x) returns first
+	 	or last x elements
+	-"lambda {code_block}" stores code block in a variable
+	-('x'..'y').to_a converts range to an array
+	-"object.methods?" returns array of all methods available to object's class
+	
+SYMBOLS
+	Don't contain values or objects, simply a consistent name within code
+	
+
+HASHES
+	-".keys" returns an array of all a hash's keys
+	-
+
+REGEX
+	-"=~ /regex/" matching command, returns position of query or FALSE
+	SEE ALSO .match(/regex/)
+		-returns an array of query matches (MATCHDATA); position one contains
+		all instances, subsequent positions contain individual matches in
+		succession
+	
+	- surrounded by /'s (so /^../ for next example)
+	- separated by | for or statement
+	-"^.." refers to the beginning of any lines in a string (^) and any two
+		characters preceding it (..) [use /A and /Z for abs start or end]
+	-"$" refers to end of any lines in a string
+	-"\w" refers to numbers and digits ["\W" for other]
+	-"\d" refers to any digit ["\D" for other]
+	-"\s" refers to whitespace (spaces, tabs, newlines, etc) ["\S for other"]
+	-"+" appended to above characters to return sequential matches together
+	-"*" append to characters to return greedy match (zero or more)
+	-"?" add to +/*; matches as FEW as possible
+	-"?" add to character; matches one or none
+	-"{x}" match x occurrences of preceding character
+	-"{x,y}" match at least x and at most y occurences
+	-"[xyz]" character class, can also specify a range
+	
+
+VARIABLES
+	Local variable has no sigil
+	Global variable sigil = $var
+	Object variable sigil = @var
+	-"object.instance_variables" returns the names of any associated object vars
+	
+	
+ENUMERABLE
+	Module of ~20 methods based on array.each
+	Any class that can accept an .each method can 'include Enumerable' and 
+		use Enumerable's methods.
+	
+	ex. of an enumerable class (see enumex.rb for more)
+		class AllVowels
+			include Enumerable
+			
+			@@vowels = %w{a e i o u}
+			def each
+				@@vowels.each {|v| yield v}
+			end
+		end
+
+
+COMPARABLE
+	Module provides classes other than int, flt, and str with comparison
+		operability.  Uses comparison operator ("<=>").
+	
+	ex. of a comparable class 
+		class Song
+			include Comparable
+			attr_accessor :length
+			
+			def <=>(other)
+				@length <=> other.length
+			end
+			
+			def initialize(song_name, length)
+				@song_name = song_name
+				@length = length
+			end
+		end
+
+
+MINITEST
+	-"assert(<boolean expression>)": Passes only if the Boolean expression
+		isn’t false or nil
+	-"assert_equal(expected, actual)": Passes only if the expected and actual
+		values are equal
+	-"assert_not_equal(expected, actual)": The opposite of assert_equal. This
+		test will fail if the expected and actual values are equal.
+	-"assert_raise(exception_type, ..) { <code block> }": Passes only if the
+		code block following the assertion raises an exception of the type(s)
+		passed as arguments. [assert_raise (ZeroDivisionError) { 2 / 0 } will
+		pass.]
+	-"assert_nothing_raised(exception_type, ..) { }": The opposite of
+		assert_raise. Passes only if none of the exceptions listed are raised.
+	-"assert_instance_of(class_expected, object)": Passes only if object is of
+		class class_expected.
+	-"flunk: flunk" is a special type of assertion in that it will always fail.
+		It’s useful if you haven’t quite finished writing your tests and you
+		want to add a strong reminder that your test case isn’t complete!
+	
+	
+	
+	
+	
+	
+	
+	
+	

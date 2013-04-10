@@ -1,0 +1,38 @@
+276 people registered in the 0'o clock hour.
+68 people registered in the 1'o clock hour.
+41 people registered in the 2'o clock hour.
+9 people registered in the 3'o clock hour.
+5 people registered in the 4'o clock hour.
+22 people registered in the 5'o clock hour.
+11 people registered in the 6'o clock hour.
+22 people registered in the 7'o clock hour.
+34 people registered in the 8'o clock hour.
+76 people registered in the 9'o clock hour.
+129 people registered in the 10'o clock hour.
+144 people registered in the 11'o clock hour.
+194 people registered in the 12'o clock hour.
+200 people registered in the 13'o clock hour.
+270 people registered in the 14'o clock hour.
+373 people registered in the 15'o clock hour.
+364 people registered in the 16'o clock hour.
+304 people registered in the 17'o clock hour.
+308 people registered in the 18'o clock hour.
+297 people registered in the 19'o clock hour.
+436 people registered in the 20'o clock hour.
+488 people registered in the 21'o clock hour.
+548 people registered in the 22'o clock hour.
+556 people registered in the 23'o clock hour.
+
+The most popular sign-up hour was 23'o clock.
+
+(Days of the week begin with Sunday = 0.)
+
+1140 people registered on 0
+487 people registered on 1
+427 people registered on 2
+1319 people registered on 3
+498 people registered on 4
+719 people registered on 5
+585 people registered on 6
+
+The most popular day to register was 3.

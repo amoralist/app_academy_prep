@@ -1,0 +1,44 @@
+EVERYTHING IS AN OBJECT
+	'self' - returns object Ruby currently identifies as 'you'
+		defaults to 'main'
+	Methods - target_object.method #=> resulting_object
+	CODE IN METHODS AFTER RETURN IS IGNORED, RETURN EXITS METHOD
+						BE CAREFUL
+	Method parameters (x, y, ..., z = 0) can be set to default values (like 
+		zero for z)
+	object.method - returns all methods invokable on provided object
+	'.sort' - sorting method to organize output objects by numerical and 
+		alphabetical order
+	object.method("argument to a method") - ATAM gives method additional 
+		required information. comma separate for multiple arguments
+	'.length' - returns length of string object
+	'.include?' - searches object for an argument enclosed in parentheses
+	'.starts_with?' - determines if object starts with parentheses enclosed
+		argument
+	Methods ending in '?' returns boolean 
+	'.index' - returns index value of parentheses enclosed argument
+	'.split' - splits string at each instance of parentheses enclosed
+		character; returns an array
+	'.concat' - equivalent to "<<"
+	'.sub' - replaces first instance of first parenthetical argument with
+		second and returns revised string
+	'.gsub' - replaces all instances like .sub
+	'.join' - returns array as a string with each element followed by any
+		character in following parenthetical expression
+	'.map' - performs bracketed expression on each element of an array
+	'.select' - searches an element for bracketed expression
+	'.delete' - removes element matching bracketed expression from element
+	'.delete_if' - removes elements matching bracketed expression from 
+		object
+	'.shift' - like .pop but removes and returns the FIRST value of an array
+	"The splat operator works both ways - you can use it to convert arrays to
+		parameter lists as easily as we just converted a parameter list to an
+		array."
+REGULAR EXPRESSION
+	surrounded by / /, used to match patterns. /[]/, used to match any 
+		contained character
+	'.match' - used on a string, searches for x from y position, RegEx ends
+		in period. (/x,y./)
+	
+		
+	

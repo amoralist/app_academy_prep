@@ -1,0 +1,86 @@
+Code Academy Ruby Track
+	-'unless' statements - run code block if condition is false
+	-'puts' adds a newline after execution, 'print' does not
+	-multiple line comment - (=begin, =end)
+	-'while' statements - execute block so long as condition is true
+	-'until' statements - execute block so long as condition is false
+	-'for' statement - iterative counter (i.e. for number in (0...x),
+		puts number, will return integers counting from 0 to x)
+		[.. in inclusive of upper bound, ... is exclusive]
+	-'loop' method - enclosed by {} or 'do' and 'end'; iterator
+		which invokes a block until a 'break' condition is met
+	-'next' - skips loop portions when a condition is met
+	-'.each' - appended to an object's name, performs x operation on all 
+		elements of an object (array.each {|x| #do something} OR
+		array.each do |x| end)
+	-'.times' - perform a bracketed function x times (i.e. 10.times 
+		{print "Hello!"} would print Hello! ten times)
+	-'.object_id' - returns element's class
+	-'.next' - returns next integer or letter
+	-'.respond_to?' - returns TRUE/FALSE (element.respond_to?(:method))
+	-'.count' - returns number of elements in array or characters in string
+	'case(x)... when... else... end' - like a long list of if/else's relating 
+	 	to x (when... then... condenses case syntax to one line per when)
+	expression if boolean - one-line if notation
+	expression unless boolean - one-line unless notation
+	ACTION (expression resulting in boolean) ? Do this if true: Do this 
+		if false - ternary conditional expression
+	||= - conditional assignment; adds value if var is undefined, no action
+		if var has already been defined
+	short-circuit evaluation - if first term of && is false, evaluation halts;
+		same for first term of || being true
+	x.upto(y) {|x| argument on x } - performs functions on sequential integers
+		or letters also '.downto'
+	'+=' - updates a variable by performing some operation; also works with
+		subtraction, multiplication, etc.
+	REFACTORING - improving structure or appearance of code without changing
+		the code's function
+	ARRAYS
+		array = [x, y, ..., z] 
+		array[x] returns (x-1) element of the array, x is the index
+		array.push(new_object(s)) adds new object(s) to end of array
+		'<<' - Concatenation operator, appends new element to end of an array
+			(or string... if neither use .to_s or string interpolation #{})
+		string.split("split@") - returns array of string elements separated by
+			each instance of the split@ character(s)
+	HASHES
+		hash = { key1 => value1,		#hash literal notation
+			key2 => value2
+		}
+		
+		OR
+		
+		hash = {one: 1,					#ruby 1.9 hash/symbol syntax
+			two: 2
+		}
+		
+		hash = Hash.new					#hash constructor notation
+		hash[new_key] = new_value - adds key/value pairs to existing
+			hash
+		hash[key] - returns associated value from existing hash
+		hash.select {|key, value| argument related to k and/or v} - returns
+			keys and/or values which meet argument criteria
+		hash.each_key OR hash.each_value - like .select for only keys or values
+		attempts to access undefined value of hash defaults to return 
+			'nil'.  redefine with Hash.new("new_default")
+	METHODS
+		def method_name(x)
+			#do something to x
+		end
+		* - add to argument definition to signal uncertain quantity of 
+			arguments
+		return - sends result of calculation without printing to console
+		IMPLICIT RETURN - methods with no explicit return will return the 
+			result of the last expression evaluated
+		do... end = recallable block; {} = one time method
+	SYMBOLS
+		:new_symbol
+		.to_sym - convert to symbol
+		.intern - internalizes string (converts to) as new symbol
+		Symbols are unique for each value (:symbol == :symbol;  
+			"string" !necessarily= "string"), useful for hash keys.
+		
+		
+		
+		
+	

@@ -1,0 +1,59 @@
+Ch2 
+	integers - no decimal
+	floating-point numbers/floats - decimals
+		(mix in 'put' returns float)
+Ch3
+	strings - groups of letters
+Ch5
+	Conversions (only affects output once, doesn't change variable def.)
+		'.to_s' converts object to a string 
+		'.to_i' converts object to integer
+		'.to_f' converts object to float
+	'Puts' necessarily involves a '.to_s' conversion for its output,
+		 short for "put string".  'Gets' is short for "get string".
+	'.chomp' removes the enter commands at the end of gets'd strings
+	From exercise: convert gotten strings into necessary object within 
+		object definition (i.e. "number = gets.chomp.to_i"), convert
+		int/float to string within output 'put' statement. (i.e 
+		"puts 'Isn\'t ' + better.to_s + ' better?'")
+Ch 6
+	-More String Methods
+	'.reverse' - returns inverse of a string
+	'.length' - returns number of CHARACTERS in a string
+	'.upcase' - capitalize all letters of a string
+	'.capitalize' - capitalizes ONLY first letter of a string
+	'.downcase' - return string in all lowercase
+	'.swapcase' - return string in inverted cases
+	'.center' - centers string in space predefined by 'line_width = x'
+	'.ljust' - justifies string left in space predefined
+	'.rjust' - justifies string right in space predefined
+    -Bonus Number Methods
+	'**' - exponentiation (i.e. 3**2 = 9)
+	'%' - modulus, returns remainder after division (i.e. 7 % 3 = 1)
+	'.abs' - returns the absolute value of a number
+	rand - returns random float between 0.0 and 1.0
+	rand (x) - returns random integer greater than 0 and less than x
+	srand \(seed\) - returns same random numbers based on seed
+	Math::PI - returns float value of pi
+	Math::E - returns float value of the natural number
+	Math.cos(x) - returns cosign of x; also .tan, .sin)
+	Math.log(x) - returns log of x
+	Math.sqrt(x) - returns square root of x
+Ch 7
+	puts + ( <, >, >=, <=, ==, !=) - returns truth value of statement;
+		compares strings by dictionary placement, uppercase then
+		lowercase, strings containing numbers by first digit
+	if branching 
+	elsif branch - coequal IF branch(es)
+	while branching
+	-Logical Operands
+		&& - AND
+		|| - OR
+		! - NOT
+Ch 9 METHODS
+	variables defined within methods are local variables, cannot be called outside
+	
+	
+	
+	
+
